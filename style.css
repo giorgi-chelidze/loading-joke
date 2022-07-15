@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height:100vh;
+    overflow:hidden; 
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+.card {
+    display: block;
+    overflow-y: hidden;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0, 0.2);
+    max-width: 330px;
+    padding: 15px;
+}
+.card-header {
+    width: 300px;
+    height: 320px;
+    overflow: hidden;
+}
+.card-content {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.card-tittle {
+    height: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+    color: rgb(9, 124, 124);
+}
+.card-excerpt {
+    margin: 10px 0 10px;
+    color: rgb(130, 133, 132);
+    font-family: sans-serif;
+    font-style: italic;
+}
+.autor {
+    display:flex;
+}
+.autor-name {
+    color: rgb(9, 124, 124);
+}
+.profile-img img{
+    border-radius: 50%;
+    width: 45px;
+    height: 40px;
+}
+.autor-info {
+    width:40%;
+    margin-left: 10px;
+}
+.animated-bg {
+    background-image: linear-gradient(to right,
+    rgb(255, 255, 255) 0%,
+    rgb(245, 241, 241) 10%,
+    rgb(243, 239, 239) 20%,
+    rgb(250, 239, 239) 100% );
+    background-size: 200% 100%;
+    animation: bgAnime 1s linear infinite;
+}
+.animated-bg-text {
+    display:inline-block;
+    border-radius: 10px;
+    margin: 0;
+    height: 10px;
+    width: 100%;
+}
+@keyframes bgAnime {
+    0% {
+        background-position: 50%;
+    }
+    100% {
+        background-position: -150%;
+    }
+}
+#chack_int {
+    font-family: 'Courier New', Courier, monospace;
+    max-width:255px;
+    color: brown;
+    font-style: italic;
+    display: none;
+}
+#by-giorgi {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(0, 255, 255);
+    background-color: rgb(27, 26, 25);
+    padding: 0 7px;
+    height: 23px;
+    display: none;
+    transition: 3s;
+}
+#smile {
+    font-size: 120px;;
+    display: none;
+}
+@media only screen and (max-width: 300px) {
+    .card {
+        width: 260px;
+        height:430px;
+    }
+    .card-header {
+        height: 200px;
+        width: 230px;
+    }
+    .autor-info {
+        width:35%;
+    }
+  }
+  
+
+
+
+
+
+
+
